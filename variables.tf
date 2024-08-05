@@ -49,7 +49,7 @@ variable "cidr_blocks" {
 }
 
 variable "db_engine" {
-  description = "The database engine to use (e.g., postgres, mysql)"
+  description = "The database engine to use (e.g., sqlserver-se)"
   type        = string
 }
 
@@ -81,7 +81,7 @@ variable "db_allocated_storage" {
 variable "db_port" {
   description = "The port on which the DB accepts connections"
   type        = number
-  default     = 5432
+  default     = 1433
 }
 
 variable "db_multi_az" {
